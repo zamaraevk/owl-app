@@ -1,0 +1,19 @@
+<div class="login">
+  <div class="container">
+    <div class="form">
+
+    <h1>Fish Access</h1>
+      <%= form_for(@user) do |f| %>  
+ 
+      <%= f.text_field :first_name, class: "sign-up" %>
+      <%= f.text_field :last_name, class: "sign-up" %>
+      <%= f.email_field :email, class: "sign-up" %>
+      <%= f.password_field :password, class: "sign-up" %>
+     <%= f.submit "Create", class: "btn-submit" %> 
+  
+<% end %>
+
+  
+    </div>
+  </div>
+</div>

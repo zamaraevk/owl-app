@@ -1,0 +1,19 @@
+
+
+<div class="login">
+  <div class="container">
+    <div class="form">
+
+    <h1>Fish Access</h1>
+      
+		<%= form_for(:session, url: login_path) do |f| %> 
+		  <%= f.email_field :email, :placeholder => "Email", class: "sign-up" %> 
+		  <%= f.password_field :password, :placeholder => "Password", class: "sign-up"%> 
+		  <%= f.submit "Log in", class: "btn-submit" %>
+		<% end %>
+
+
+  
+    </div>
+  </div>
+</div>
